@@ -1,0 +1,23 @@
+﻿<Window x:Class="Proj2_Woolschlager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proj2_Woolschlager"
+        mc:Ignorable="d"
+        Title="BMI Calculator" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="feetBox" HorizontalAlignment="Left" Height="45" Margin="200,119,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="inchesBox" HorizontalAlignment="Left" Height="43" Margin="420,119,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Height" HorizontalAlignment="Left" Margin="60,136,0,0" VerticalAlignment="Top" Height="40" Width="80" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Weight" HorizontalAlignment="Left" Margin="58,256,0,0" VerticalAlignment="Top" Height="40" Width="80" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Feet:" HorizontalAlignment="Left" Margin="158,138,0,0" VerticalAlignment="Top" Height="40" Width="80" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Inches:" HorizontalAlignment="Left" Margin="364,136,0,0" VerticalAlignment="Top" Height="40" Width="80" FontSize="14" FontWeight="Bold"/>
+        <Slider x:Name="weightSlider" HorizontalAlignment="Left" Height="17" Margin="158,260,0,0" VerticalAlignment="Top" Width="382" IsSnapToTickEnabled="True" Maximum="500" TickPlacement="BottomRight" AutoToolTipPlacement="BottomRight" TickFrequency="1" IsDirectionReversed="False" IsMoveToPointEnabled="False" ValueChanged="WeightSlider_ValueChanged" />
+        <Label Content="BMI Calculator" HorizontalAlignment="Center" Margin="196,38,286.2,0" Height="60" Width="313" FontSize="36" FontWeight="Bold" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Britannic Bold"/>
+        <Button x:Name="btnPress" Content="Calculate BMI" HorizontalAlignment="Left" Margin="200,305,0,0" VerticalAlignment="Top" Width="301" Height="34" FontWeight="Bold" FontSize="14" Click="BtnPress_Click"/>
+        <Image x:Name="imgWeightPic" HorizontalAlignment="Center" Height="294" Margin="596,119,44.2,0" VerticalAlignment="Top" Width="155" Source="Images/unknown.png"/>
+        <Label x:Name="lblWeight" Content="" HorizontalAlignment="Left" Margin="558,254,0,0" VerticalAlignment="Top" Height="30" Width="59"/>
+        <Label x:Name="dblWeight" Content="" HorizontalAlignment="Left" Margin="320,355,0,0" VerticalAlignment="Top" Height="25" Width="68"/>
+    </Grid>
+</Window>
